@@ -71,7 +71,7 @@ namespace XIM_ConverterVariables_stpTospj
 
                         // Utilizar expresión regular para encontrar y eliminar el tipo de dato
                         nombreVariable = EliminarTipoDato(nombreVariable);
-                        parteDerecha = EliminarTipoDato(parteDerecha);
+                        //parteDerecha = EliminarTipoDato(parteDerecha);
 
                         // Crear la cadena de resultado con la sintaxis deseada
                         resultado.AppendLine($"@{nombreVariable} = ISNULL({nombreVariable}, {parteDerecha}),");
